@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Job Application</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<h2>Job Application</h2>
+<p>&nbsp;</p>
+
+<form name="input" action="html_form_action.asp" method="post">
+
+	<fieldset class="form-horizontal" >
+		<legend>Account</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Email</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Password</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Repeat password</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="repeat_password">
+			</div>
+		</div>
+        <div class="form-group">
+            <label class="col-sm-offset-1 col-sm-11">
+                <input type="checkbox" name="promotions" value="promotions">
+                Check if you would like to recieve relevent promotions from the website
+            </label>
+        </div>
+        
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset class="form-horizontal" >
+		<legend>Personal Information</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Full name</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="name">
+			</div>
+		</div>
+        <div class="form-group">
+			<label class="col-sm-3 control-label">Phone number</label>
+			<div class="col-sm-9">
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+			</div>
+		</div>
+        <div class="form-group">
+			<label class="col-sm-3 control-label">Birthday</label>
+			<div class="col-sm-9">
+				<input type="date" id="birthday" name="birthday" min="1990-01-01">
+			</div>
+		</div>
+        <div class="form-group">
+			<label class="col-sm-3 control-label">Photo of you</label>
+			<div class="col-sm-9">
+                <label for="photo">Upload your photo:</label>
+                <input type="file" id="photo" name="photo"><br><br>
+                <input type="submit" value="Upload">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Street address</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="street">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">City</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="city">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">State</label>
+			<div class="col-sm-9" >
+				<select class="form-control" name="state">
+					<option value="" selected="true">Choose a State</option>
+					<option value="AL">Alabama</option>
+					<option value="AK">Alaska</option>
+					<option value="AZ">Arizona</option>
+					<option value="AR">Arkansas</option>
+					<option value="CA">California</option>
+					<option value="CO">Colorado</option>
+					<option value="CT">Connecticut</option>
+					<option value="DE">Delaware</option>
+					<option value="DC">District of Columbia</option>
+					<option value="FL">Florida</option>
+					<option value="GA">Georgia</option>
+					<option value="HI">Hawaii</option>
+					<option value="ID">Idaho</option>
+					<option value="IL">Illinois</option>
+					<option value="IN">Indiana</option>
+					<option value="IA">Iowa</option>
+					<option value="KS">Kansas</option>
+					<option value="KY">Kentucky</option>
+					<option value="LA">Louisiana</option>
+					<option value="ME">Maine</option>
+					<option value="MD">Maryland</option>
+					<option value="MA">Massachusetts</option>
+					<option value="MI">Michigan</option>
+					<option value="MN">Minnesota</option>
+					<option value="MS">Mississippi</option>
+					<option value="MO">Missouri</option>
+					<option value="MT">Montana</option>
+					<option value="NE">Nebraska</option>
+					<option value="NV">Nevada</option>
+					<option value="NH">New Hampshire</option>
+					<option value="NJ">New Jersey</option>
+					<option value="NM">New Mexico</option>
+					<option value="NY">New York</option>
+					<option value="NC">North Carolina</option>
+					<option value="ND">North Dakota</option>
+					<option value="OH">Ohio</option>
+					<option value="OK">Oklahoma</option>
+					<option value="OR">Oregon</option>
+					<option value="PA">Pennsylvania</option>
+					<option value="RI">Rhode Island</option>
+					<option value="SC">South Carolina</option>
+					<option value="SD">South Dakota</option>
+					<option value="TN">Tennessee</option>
+					<option value="TX">Texas</option>
+					<option value="UT">Utah</option>
+					<option value="VT">Vermont</option>
+					<option value="VA">Virginia</option>
+					<option value="WA">Washington</option>
+					<option value="WV">West Virginia</option>
+					<option value="WI">Wisconsin</option>
+					<option value="WY">Wyoming</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">ZIP</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="zip">
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Availability and Work interest</legend>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">Are you permanent resident in this country?</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="radio">
+					<label>
+						<input type="radio" name="permanent" value="yes">Yes
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="permanent" value="no">No
+					</label>
+				</div>
+			</div>
+		</div>
+        <div class="form-group row">
+            <label class="col-sm-12 control-label">Do you have driver license?</label>
+            <div class="col-sm-offset-1 col-sm-11">
+				<div class="radio">
+					<label>
+						<input type="radio" name="license" value="yes">Yes
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="license" value="no">No
+					</label>
+				</div>
+			</div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 control-label">If so, enter your driver license number:</label>
+            <div class="col-sm-9">
+				<input class="form-control" type="text" name="license_num">
+			</div>
+        </div>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">What type of position are you seeking? (check all that apply)</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_pt" value="parttime">
+						Part time
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_ft" value="fulltime">
+						Full time
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_sl" value="seasonal">
+						Seasonal
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_tp" value="temporary">
+						Temporary
+					</label>
+				</div>
+                <div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_tp" value="Internship_1m">
+						Internship(1 month)
+					</label>
+				</div>
+                <div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_tp" value="Internship_3m">
+						Internship(3 months)
+					</label>
+				</div>
+			</div>
+		</div>
+        <div class="form-group row">
+            <label class="col-sm-12 control-label">How many days would like to work per week?</label>
+            <div class="col-sm-offset-1 col-sm-11">
+                <label class="col-sm-12 control-label">
+                    Number of days
+                    <input type="number" id="days" name="days" min="1" max="7">
+                </label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 control-label">Do you accept work duirng midnight?</label>
+            <div class="col-sm-offset-1 col-sm-11">
+				<div class="radio">
+					<label>
+						<input type="radio" name="midnight" value="yes">Yes
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="midnight" value="no">No
+					</label>
+				</div>
+			</div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 control-label">If yes, select the day you prefer to work during midnight</label>
+            <div class="col-sm-offset-1 col-sm-11">
+				<div>
+                    <input list="midnight_day">
+                    <datalist id="midnight_day">
+                      <option value="Monday">
+                      <option value="Tuesday">
+                      <option value="Wednesday">
+                      <option value="Thursday">
+                      <option value="Friday">
+                      <option value="Saturday">
+                      <option value="Sunday">
+                    </datalist>
+				</div>
+			</div>
+        </div>
+		
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+        <div class="form-group">
+			<label class="col-sm-12 control-label">Upload your resume (if any):</label>
+			<div class="col-sm-9">
+                <input type="file" id="resume" name="resume"><br><br>
+                <input type="submit" value="Upload">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-12 control-label">Why do you deserve this job?</label>
+			<textarea class="form-control" name="deserve" rows="5"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-12 control-label">Describe a recent project</label>
+			<textarea class="form-control" name="project" rows="5"></textarea>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+    <input class="btn btn-primary btn-lg" type="reset" value="Reset all inputs">
+
+	<p>&nbsp;</p>
+
+</form>
+</div><!-- close .container -->
+</body>
+</html>
